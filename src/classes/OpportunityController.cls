@@ -9,7 +9,6 @@ public class OpportunityController {
             	AccountIds.add(opp.AccountId);
             }
         }
-    
         List<Account> account  = [Select id,Rating from Account where Id IN: AccountIds];
         if(account != null){
         	for(Account acc: account){
