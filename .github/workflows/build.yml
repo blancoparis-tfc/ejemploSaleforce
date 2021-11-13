@@ -5,6 +5,7 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+ #Esto es para que se vea las ejecuciones en github  
   workflow_dispatch: 
 jobs:
   build:
